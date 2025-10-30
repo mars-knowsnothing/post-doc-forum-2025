@@ -232,6 +232,14 @@ The provided nginx configuration includes:
 - **Access logs:** `/var/log/nginx/postdoc-forum-access.log`
 - **Error logs:** `/var/log/nginx/postdoc-forum-error.log`
 
+### Common Warnings:
+
+**Note:** In shared hosting environments with multiple SSL sites, you may see these warnings during `nginx -t`:
+- `"protocol options redefined for 0.0.0.0:443"` - This occurs when multiple sites define SSL settings for the same IP:port. This is normal and doesn't affect functionality.
+- `"duplicate MIME type"` - This happens when multiple sites define overlapping gzip MIME types. Our configuration uses minimal MIME types to avoid conflicts.
+
+These warnings don't prevent nginx from working correctly but indicate configuration overlaps between different sites on the same server.
+
 ## 📊 Performance Optimization
 
 ### Additional nginx optimizations:
