@@ -73,10 +73,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Disable server-side features for static export
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
 export default withNextIntl(nextConfig);

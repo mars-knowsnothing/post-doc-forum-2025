@@ -79,10 +79,6 @@ echo   trailingSlash: true,
 echo   images: {
 echo     unoptimized: true
 echo   },
-echo   // Disable server-side features for static export
-echo   eslint: {
-echo     ignoreDuringBuilds: true,
-echo   },
 echo };
 echo.
 echo export default withNextIntl(nextConfig^);
