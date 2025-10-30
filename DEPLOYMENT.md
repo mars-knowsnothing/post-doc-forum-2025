@@ -151,7 +151,7 @@ CNAME Record: www.your-domain.com → your-domain.com
 
 2. **Obtain SSL certificate:**
    ```bash
-   sudo certbot --nginx -d your-domain.com -d www.your-domain.com
+   sudo certbot --nginx -d KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn
    ```
 
 3. **Certbot will automatically update your nginx configuration**
@@ -164,16 +164,16 @@ CNAME Record: www.your-domain.com → your-domain.com
    ```
 
 2. **Check language redirects:**
-   - `http://your-domain.com/` → should redirect to `/en/`
-   - `http://your-domain.com/en/` → English homepage
-   - `http://your-domain.com/zh/` → Chinese homepage
+   - `https://KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn/` → should redirect to `/en/`
+   - `https://KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn/en/` → English homepage
+   - `https://KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn/zh/` → Chinese homepage
 
 3. **Test specific pages:**
-   - `http://your-domain.com/en/registration/` → English registration
-   - `http://your-domain.com/zh/registration/` → Chinese registration
+   - `https://KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn/en/registration/` → English registration
+   - `https://KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn/zh/registration/` → Chinese registration
 
 4. **Check QR code accessibility:**
-   - `http://your-domain.com/registration-qr-code.jpg`
+   - `https://KIAA-DoA-postdoc-forum-2025.kiaa-pku.cn/registration-qr-code.jpg`
 
 ## 🔧 Nginx Configuration Features
 
