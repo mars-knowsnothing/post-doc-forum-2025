@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "program": "Programme",
+    "registration": "Registration",
+    "venue": "Venue",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "PKU + THU Joint Postdoc Forum in Astronomy and Astrophysics 2025",
+    "subtitle": "A two-day event designed to spark new collaborations and foster awareness of ongoing research",
+    "description": "The joint Postdoc Forum in Astronomy and Astrophysics, co-hosted by the Kavli Institute of Astronomy and Astrophysics at Peking University (KIAA) and the Department of Astronomy at Tsinghua University (DoA), will be a two-day event (December 1 and 2) designed to spark new collaborations and foster awareness of ongoing research.",
+    "dates": "December 1-2, 2025",
+    "venue_day1": "Day 1: KIAA, Peking University",
+    "venue_day2": "Day 2: DoA, Tsinghua University",
+    "participants": "Limited to 40 participants",
+    "registration_fee": "No registration fee",
+    "register_now": "Register Now",
+    "early_registration": "Early registration is encouraged to secure a talk or poster slot!",
+    "features": {
+      "talks": "20-minute research talks by postdocs",
+      "posters": "Poster sessions for postdocs and PhD students",
+      "discussions": "Informal discussion sessions",
+      "topics": "All topics welcome: observational astronomy, theoretical astrophysics, machine learning, etc.",
+      "meals": "Lunch and coffee breaks provided on both days"
+    }
+  },
+  "program": {
+    "title": "Programme",
+    "day1": "December 1st (Monday) - KIAA",
+    "day2": "December 2nd (Tuesday) - DoA",
+    "full_day_schedule": "TBD",
+    "talk_format": "Talks: 20 minutes + 5 minutes Q&A"
+  },
+  "registration": {
+    "title": "Registration",
+    "deadline_talk": "Registration deadline for talks/posters: November 15, 2025",
+    "deadline_general": "General registration deadline: November 25, 2025",
+    "note": "Or earlier if all 40 spots are filled",
+    "qr_section": {
+      "title": "Registration",
+      "subtitle": "Please scan the QR code below to register",
+      "alt_text": "Registration QR Code",
+      "instructions_title": "How to Register",
+      "step1": "📱 Scan the QR code with your phone camera or QR code app",
+      "step2": "📝 Fill out the registration form online",
+      "step3": "✅ You will receive a confirmation email after submission",
+      "contact_title": "Questions?",
+      "contact_text": "If you have any issues with registration, please contact the organizing committee."
+    }
+  },
+  "venue": {
+    "title": "Venue Information",
+    "day1_venue": "December 1st: Kavli Institute for Astronomy and Astrophysics at Peking University",
+    "day2_venue": "December 2nd: Department of Astronomy, Tsinghua University",
+    "location": "Beijing, China",
+    "kiaa_link": "KIAA Website",
+    "doa_link": "DoA Website",
+    "map_placeholder": "Interactive map will be available here"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "advisory_committee": "Advisory Committee",
+    "organizing_committee": "Organizing Committee",
+    "kiaa_members": "KIAA Members",
+    "doa_members": "DoA Members"
+  },
+  "footer": {
+    "copyright": "© 2025 PKU + THU Joint Postdoc Forum in Astronomy and Astrophysics",
+    "hosted_by": "Co-hosted by KIAA (PKU) and DoA (THU)"
+  }
+}

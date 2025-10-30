@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "首页",
+    "program": "日程安排",
+    "registration": "注册报名",
+    "venue": "会议地点",
+    "contact": "联系方式",
+    "language": "语言"
+  },
+  "home": {
+    "title": "北京大学+清华大学天体物理博士后联合论坛2025",
+    "subtitle": "为期两天的学术活动，旨在促进新的合作并提高对正在进行的研究的认识",
+    "description": "天体物理博士后联合论坛由北京大学科维理天文与天体物理研究所（KIAA）和清华大学天文系（DoA）共同主办，为期两天（12月1日和2日），旨在促进新的合作并提高对正在进行的研究的认识。",
+    "dates": "2025年12月1-2日",
+    "venue_day1": "第一天：北京大学科维理天文与天体物理研究所",
+    "venue_day2": "第二天：清华大学天文系",
+    "participants": "限制40名参与者",
+    "registration_fee": "免注册费",
+    "register_now": "立即注册",
+    "early_registration": "鼓励尽早注册以确保报告或海报展示机会！",
+    "features": {
+      "talks": "博士后20分钟研究报告",
+      "posters": "博士后和博士生海报展示",
+      "discussions": "非正式讨论环节",
+      "topics": "欢迎所有主题：观测天文学、理论天体物理学、机器学习等",
+      "meals": "两天均提供午餐和茶歇"
+    }
+  },
+  "program": {
+    "title": "日程安排",
+    "day1": "12月1日（周一）- 科维理研究所",
+    "day2": "12月2日（周二）- 清华天文系",
+    "full_day_schedule": "待定",
+    "talk_format": "报告格式：20分钟 + 5分钟问答"
+  },
+  "registration": {
+    "title": "注册报名",
+    "deadline_talk": "报告/海报注册截止日期：2025年11月15日",
+    "deadline_general": "一般注册截止日期：2025年11月25日",
+    "note": "或在40个名额满员时提前截止",
+    "qr_section": {
+      "title": "会议注册",
+      "subtitle": "请扫描下方二维码进行注册",
+      "alt_text": "注册二维码",
+      "instructions_title": "注册步骤",
+      "step1": "📱 使用手机相机或二维码应用扫描二维码",
+      "step2": "📝 在线填写注册表单",
+      "step3": "✅ 提交后您将收到确认邮件",
+      "contact_title": "遇到问题？",
+      "contact_text": "如果您在注册过程中遇到任何问题，请联系组织委员会。"
+    }
+  },
+  "venue": {
+    "title": "会议地点",
+    "day1_venue": "12月1日：北京大学科维理天文与天体物理研究所",
+    "day2_venue": "12月2日：清华大学天文系",
+    "location": "中国北京",
+    "kiaa_link": "科维理研究所网站",
+    "doa_link": "清华天文系网站",
+    "map_placeholder": "交互式地图将在此处提供"
+  },
+  "contact": {
+    "title": "联系方式",
+    "advisory_committee": "顾问委员会",
+    "organizing_committee": "组织委员会",
+    "kiaa_members": "科维理研究所成员",
+    "doa_members": "清华天文系成员"
+  },
+  "footer": {
+    "copyright": "© 2025 北京大学+清华大学天体物理博士后联合论坛",
+    "hosted_by": "由科维理研究所（北京大学）和天文系（清华大学）共同主办"
+  }
+}
