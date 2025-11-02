@@ -7,13 +7,18 @@ export default async function Contact() {
     {
       name: 'Gregory J. Herczeg',
       affiliation: 'KIAA',
-      email: 'gherczeg@pku.edu.cn',
+      email: 'gherczeg1@gmail.com',
+    },
+    {
+      name: 'Feng Long',
+      affiliation: 'KIAA',
+      email: 'long.feng@pku.edu.cn',
     },
     {
       name: 'Dandan Xu',
       affiliation: 'DoA',
-      email: 'ddxu@tsinghua.edu.cn',
-    },
+      email: 'dandanxu@tsinghua.edu.cn',
+    }
   ];
 
   const organizingCommittee = {
@@ -21,7 +26,7 @@ export default async function Contact() {
       {
         name: 'Verónica Vázquez Aceves',
         affiliation: 'KIAA',
-        email: 'vvazquez@pku.edu.cn',
+        email: 'veronica@pku.edu.cn',
       },
       {
         name: 'Haonan Zheng',
@@ -31,24 +36,24 @@ export default async function Contact() {
       {
         name: 'Boris S. Kalita',
         affiliation: 'KIAA',
-        email: 'bkalita@pku.edu.cn',
+        email: 'boris.kalita@pku.edu.cn',
       },
     ],
     doa: [
       {
         name: 'Elizabeth Moreno Hilario',
         affiliation: 'DoA',
-        email: 'emoreno@tsinghua.edu.cn',
+        email: 'elimorh@mail.tsinghua.edu.cn',
       },
       {
         name: 'Alvaro Segovia Otero',
         affiliation: 'DoA',
-        email: 'asegovia@tsinghua.edu.cn',
+        email: 'asegoviao@mail.tsinghua.edu.cn',
       },
       {
         name: 'David Robinson',
         affiliation: 'DoA',
-        email: 'drobinson@tsinghua.edu.cn',
+        email: 'drobinson@mail.tsinghua.edu.cn',
       },
     ],
   };
