@@ -17,6 +17,7 @@
     "participants": "Limited to 40 participants",
     "registration_fee": "No registration fee",
     "register_now": "Register Now",
+    "register_closed": "Registration Closed",
     "early_registration": "Early registration is encouraged to secure a talk or poster slot!",
     "features": {
       "talks": "20-minute research talks by postdocs",
@@ -31,7 +32,10 @@
     "day1": "December 1st (Monday) - KIAA",
     "day2": "December 2nd (Tuesday) - DoA",
     "full_day_schedule": "TBD",
-    "talk_format": "Talks: 20 minutes + 5 minutes Q&A"
+    "talk_format": "Talks: 20 minutes + 5 minutes Q&A",
+    "cta_title": "Ready to Participate?",
+    "cta_subtitle": "Secure your spot for talks, posters, or discussion sessions.",
+    "register_closed": "Registration Closed"
   },
   "registration": {
     "title": "Registration",
@@ -48,6 +52,13 @@
       "step3": "✅ You will receive a confirmation email after submission",
       "contact_title": "Questions?",
       "contact_text": "If you have any issues with registration, please contact the organizing committee."
+    },
+    "closed_notice": {
+      "title": "Registration Closed",
+      "message": "We appreciate your interest in the PKU + THU Joint Postdoc Forum. Registration for this event has now closed.",
+      "thank_you": "Thank you to all participants who registered. We look forward to seeing you at the event!",
+      "view_program": "View Programme",
+      "contact_us": "Contact Us"
     }
   },
   "venue": {

@@ -33,7 +33,7 @@ export default function Navigation() {
   const navItems = [
     { key: 'home', href: `/${currentLocale}` },
     { key: 'program', href: `/${currentLocale}/program` },
-    { key: 'registration', href: `/${currentLocale}/registration` },
+    // { key: 'registration', href: `/${currentLocale}/registration` }, // Hidden - Registration closed
     { key: 'venue', href: `/${currentLocale}/venue` },
     { key: 'contact', href: `/${currentLocale}/contact` },
   ];

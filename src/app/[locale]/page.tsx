@@ -28,12 +28,12 @@ export default async function Home({params}: {params: Promise<{locale: string}>}
               {t('subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href={`/${locale}/registration`}
-                className="bg-gradient-to-r from-blue-600 to-slate-700 hover:from-blue-700 hover:to-slate-800 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              <button
+                disabled
+                className="bg-gray-400 text-white px-8 py-4 rounded-lg text-lg font-semibold cursor-not-allowed opacity-60 shadow-lg"
               >
-                {t('register_now')}
-              </Link>
+                {t('register_closed')}
+              </button>
             </div>
           </div>
         </div>

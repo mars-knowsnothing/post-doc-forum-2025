@@ -148,14 +148,14 @@ export default async function Program() {
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-blue-50 to-slate-100 rounded-xl p-8 border border-blue-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Participate?</h3>
-            <p className="text-gray-600 mb-6">Secure your spot for talks, posters, or discussion sessions.</p>
-            <a
-              href="./registration"
-              className="inline-block bg-gradient-to-r from-blue-600 to-slate-700 hover:from-blue-700 hover:to-slate-800 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('cta_title')}</h3>
+            <p className="text-gray-600 mb-6">{t('cta_subtitle')}</p>
+            <button
+              disabled
+              className="inline-block bg-gray-400 text-white px-8 py-4 rounded-lg text-lg font-semibold cursor-not-allowed opacity-60 shadow-lg"
             >
-              Register Now
-            </a>
+              {t('register_closed')}
+            </button>
           </div>
         </div>
       </div>
