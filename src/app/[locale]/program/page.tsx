@@ -1,11 +1,82 @@
 import {getTranslations} from 'next-intl/server';
 
+interface ScheduleItem {
+  time: string;
+  type: string;
+  speaker: string;
+  title: string;
+}
+
 export default async function Program() {
   const t = await getTranslations('program');
 
-  const scheduleItems = [
-    { time: '8:30 - 18:00', activity: 'full_day_schedule' },
+  // Get the schedule data from translation files
+  const day1Schedule: ScheduleItem[] = [
+    {"time": "9:00-9:15", "type": "opening", "speaker": "", "title": t('schedule.day1.0.title')},
+    {"time": "9:15-9:40", "type": "talk", "speaker": t('schedule.day1.1.speaker'), "title": t('schedule.day1.1.title')},
+    {"time": "9:40-10:05", "type": "talk", "speaker": t('schedule.day1.2.speaker'), "title": t('schedule.day1.2.title')},
+    {"time": "10:05-10:15", "type": "poster", "speaker": "", "title": t('schedule.day1.3.title')},
+    {"time": "10:15-11:15", "type": "coffee", "speaker": "", "title": t('schedule.day1.4.title')},
+    {"time": "11:15-11:40", "type": "talk", "speaker": t('schedule.day1.5.speaker'), "title": t('schedule.day1.5.title')},
+    {"time": "11:40-12:05", "type": "talk", "speaker": t('schedule.day1.6.speaker'), "title": t('schedule.day1.6.title')},
+    {"time": "12:05-12:30", "type": "talk", "speaker": t('schedule.day1.7.speaker'), "title": t('schedule.day1.7.title')},
+    {"time": "12:30-14:00", "type": "lunch", "speaker": "", "title": t('schedule.day1.8.title')},
+    {"time": "14:00-14:25", "type": "talk", "speaker": t('schedule.day1.9.speaker'), "title": t('schedule.day1.9.title')},
+    {"time": "14:25-14:50", "type": "talk", "speaker": t('schedule.day1.10.speaker'), "title": t('schedule.day1.10.title')},
+    {"time": "14:50-15:15", "type": "talk", "speaker": t('schedule.day1.11.speaker'), "title": t('schedule.day1.11.title')},
+    {"time": "15:15-15:25", "type": "poster", "speaker": "", "title": t('schedule.day1.12.title')},
+    {"time": "15:25-16:30", "type": "coffee", "speaker": "", "title": t('schedule.day1.13.title')},
+    {"time": "16:30-16:55", "type": "talk", "speaker": t('schedule.day1.14.speaker'), "title": t('schedule.day1.14.title')},
+    {"time": "16:55-17:20", "type": "talk", "speaker": t('schedule.day1.15.speaker'), "title": t('schedule.day1.15.title')},
+    {"time": "17:20-18:00", "type": "discussion", "speaker": "", "title": t('schedule.day1.16.title')},
+    {"time": "18:00-20:00", "type": "dinner", "speaker": "", "title": t('schedule.day1.17.title')},
   ];
+
+  const day2Schedule: ScheduleItem[] = [
+    {"time": "9:00-9:15", "type": "opening", "speaker": "", "title": t('schedule.day2.0.title')},
+    {"time": "9:15-9:40", "type": "talk", "speaker": t('schedule.day2.1.speaker'), "title": t('schedule.day2.1.title')},
+    {"time": "9:40-10:05", "type": "talk", "speaker": t('schedule.day2.2.speaker'), "title": t('schedule.day2.2.title')},
+    {"time": "10:05-10:15", "type": "poster", "speaker": "", "title": t('schedule.day2.3.title')},
+    {"time": "10:15-11:15", "type": "coffee", "speaker": "", "title": t('schedule.day2.4.title')},
+    {"time": "11:15-11:40", "type": "talk", "speaker": t('schedule.day2.5.speaker'), "title": t('schedule.day2.5.title')},
+    {"time": "11:40-12:05", "type": "talk", "speaker": t('schedule.day2.6.speaker'), "title": t('schedule.day2.6.title')},
+    {"time": "12:05-12:30", "type": "talk", "speaker": t('schedule.day2.7.speaker'), "title": t('schedule.day2.7.title')},
+    {"time": "12:30-14:00", "type": "lunch", "speaker": "", "title": t('schedule.day2.8.title')},
+    {"time": "14:00-14:25", "type": "talk", "speaker": t('schedule.day2.9.speaker'), "title": t('schedule.day2.9.title')},
+    {"time": "14:25-14:50", "type": "talk", "speaker": t('schedule.day2.10.speaker'), "title": t('schedule.day2.10.title')},
+    {"time": "14:50-15:15", "type": "talk", "speaker": t('schedule.day2.11.speaker'), "title": t('schedule.day2.11.title')},
+    {"time": "15:15-15:25", "type": "poster", "speaker": "", "title": t('schedule.day2.12.title')},
+    {"time": "15:25-16:30", "type": "coffee", "speaker": "", "title": t('schedule.day2.13.title')},
+    {"time": "16:30-16:55", "type": "talk", "speaker": t('schedule.day2.14.speaker'), "title": t('schedule.day2.14.title')},
+    {"time": "16:55-17:20", "type": "talk", "speaker": t('schedule.day2.15.speaker'), "title": t('schedule.day2.15.title')},
+    {"time": "17:20-18:00", "type": "discussion", "speaker": "", "title": t('schedule.day2.16.title')},
+  ];
+
+  const getItemColor = (type: string) => {
+    switch(type) {
+      case 'talk': return 'bg-blue-50 border-blue-200 hover:border-blue-400';
+      case 'poster': return 'bg-purple-50 border-purple-200 hover:border-purple-400';
+      case 'coffee': return 'bg-amber-50 border-amber-200 hover:border-amber-400';
+      case 'lunch': return 'bg-green-50 border-green-200 hover:border-green-400';
+      case 'dinner': return 'bg-orange-50 border-orange-200 hover:border-orange-400';
+      case 'discussion': return 'bg-indigo-50 border-indigo-200 hover:border-indigo-400';
+      case 'opening': return 'bg-rose-50 border-rose-200 hover:border-rose-400';
+      default: return 'bg-gray-50 border-gray-200 hover:border-gray-400';
+    }
+  };
+
+  const getTimeColor = (type: string) => {
+    switch(type) {
+      case 'talk': return 'bg-blue-600';
+      case 'poster': return 'bg-purple-600';
+      case 'coffee': return 'bg-amber-600';
+      case 'lunch': return 'bg-green-600';
+      case 'dinner': return 'bg-orange-600';
+      case 'discussion': return 'bg-indigo-600';
+      case 'opening': return 'bg-rose-600';
+      default: return 'bg-gray-600';
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50">
@@ -55,16 +126,19 @@ export default async function Program() {
             </div>
 
             <div className="p-6">
-              <div className="space-y-4">
-                {scheduleItems.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-blue-50 border border-blue-100 hover:border-blue-300 transition-colors">
-                    <div className="flex-shrink-0">
-                      <div className="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm font-medium">
+              <div className="space-y-3">
+                {day1Schedule.map((item, index) => (
+                  <div key={index} className={`flex items-center space-x-4 p-4 rounded-lg border transition-colors h-[120px] ${getItemColor(item.type)}`}>
+                    <div className="flex-shrink-0 w-[100px]">
+                      <div className={`${getTimeColor(item.type)} text-white px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap text-center`}>
                         {item.time}
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <p className="text-gray-900 font-medium">{t(item.activity)}</p>
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      {item.speaker && (
+                        <p className="text-gray-900 font-semibold text-sm mb-1">{item.speaker}</p>
+                      )}
+                      <p className="text-gray-700 text-sm leading-snug line-clamp-4">{item.title}</p>
                     </div>
                   </div>
                 ))}
@@ -85,16 +159,19 @@ export default async function Program() {
             </div>
 
             <div className="p-6">
-              <div className="space-y-4">
-                {scheduleItems.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-slate-50 border border-slate-100 hover:border-slate-300 transition-colors">
-                    <div className="flex-shrink-0">
-                      <div className="bg-slate-600 text-white px-3 py-1 rounded-lg text-sm font-medium">
+              <div className="space-y-3">
+                {day2Schedule.map((item, index) => (
+                  <div key={index} className={`flex items-center space-x-4 p-4 rounded-lg border transition-colors h-[120px] ${getItemColor(item.type)}`}>
+                    <div className="flex-shrink-0 w-[100px]">
+                      <div className={`${getTimeColor(item.type)} text-white px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap text-center`}>
                         {item.time}
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <p className="text-gray-900 font-medium">{t(item.activity)}</p>
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      {item.speaker && (
+                        <p className="text-gray-900 font-semibold text-sm mb-1">{item.speaker}</p>
+                      )}
+                      <p className="text-gray-700 text-sm leading-snug line-clamp-4">{item.title}</p>
                     </div>
                   </div>
                 ))}

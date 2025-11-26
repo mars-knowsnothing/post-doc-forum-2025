@@ -31,11 +31,51 @@
     "title": "Programme",
     "day1": "December 1st (Monday) - KIAA",
     "day2": "December 2nd (Tuesday) - DoA",
-    "full_day_schedule": "TBD",
     "talk_format": "Talks: 20 minutes + 5 minutes Q&A",
     "cta_title": "Ready to Participate?",
     "cta_subtitle": "Secure your spot for talks, posters, or discussion sessions.",
-    "register_closed": "Registration Closed"
+    "register_closed": "Registration Closed",
+    "schedule": {
+      "day1": [
+        {"time": "9:00-9:15", "type": "opening", "speaker": "", "title": "Opening"},
+        {"time": "9:15-9:40", "type": "talk", "speaker": "Mengfan He", "title": "Using Linear points to constraint the cosmological parameter"},
+        {"time": "9:40-10:05", "type": "talk", "speaker": "Fanyi Meng", "title": "HI superbubbles in HI3 show that supernovae power galactic turbulence"},
+        {"time": "10:05-10:15", "type": "poster", "speaker": "", "title": "Poster flash talks"},
+        {"time": "10:15-11:15", "type": "coffee", "speaker": "", "title": "Coffee Break"},
+        {"time": "11:15-11:40", "type": "talk", "speaker": "Yongjun Jiao", "title": "Galaxy HI Source Finding in FAST CRAFTS Data"},
+        {"time": "11:40-12:05", "type": "talk", "speaker": "Yuxuan Pang", "title": "Searching for Galaxies and AGNs at Cosmic Noon with HST and JWST Slitless Spectroscopy"},
+        {"time": "12:05-12:30", "type": "talk", "speaker": "Ranbir Sharma", "title": "Reconstruction and Study of Hubble diagram of quasars"},
+        {"time": "12:30-14:00", "type": "lunch", "speaker": "", "title": "Lunch"},
+        {"time": "14:00-14:25", "type": "talk", "speaker": "Shiwu Zhang", "title": "Exploring the picture of the high-redshift active galactic nuclei (AGN): Evidence from the diffuse emission of the Circumnucleatic Medium (CGM)"},
+        {"time": "14:25-14:50", "type": "talk", "speaker": "ZHANG Meng", "title": "The Formation of Direct Collapse Black Holes at 21 cm Dawn and 21 cm Global Spectrum"},
+        {"time": "14:50-15:15", "type": "talk", "speaker": "Zexi Niu", "title": "On the Origin of Hydrogen-rich Core-Collapse Supernovae: The Role of Multiple Progenitor Channels"},
+        {"time": "15:15-15:25", "type": "poster", "speaker": "", "title": "Poster flash talks"},
+        {"time": "15:25-16:30", "type": "coffee", "speaker": "", "title": "Coffee Break"},
+        {"time": "16:30-16:55", "type": "talk", "speaker": "Jiaqi Zhao", "title": "The Fascinating Neutron Stars in X-rays: The Youngest, The Oldest, The Oddest"},
+        {"time": "16:55-17:20", "type": "talk", "speaker": "Rishabh Singh Teja", "title": "Short-plateau Supernovae: Challenging typical progenitor scenarios"},
+        {"time": "17:20-18:00", "type": "discussion", "speaker": "", "title": "AI: Career Development"},
+        {"time": "18:00-20:00", "type": "dinner", "speaker": "", "title": "Dinner"}
+      ],
+      "day2": [
+        {"time": "9:00-9:15", "type": "opening", "speaker": "", "title": "Opening"},
+        {"time": "9:15-9:40", "type": "talk", "speaker": "Zhao Li", "title": "Black hole scattering captures the wave nature of gravitational wave lensing"},
+        {"time": "9:40-10:05", "type": "talk", "speaker": "Wen-Fan Feng", "title": "Gravitational Waves from Spinning Neutron Stars in Galactic Binary and Triple Systems"},
+        {"time": "10:05-10:15", "type": "poster", "speaker": "", "title": "Poster flash talks"},
+        {"time": "10:15-11:15", "type": "coffee", "speaker": "", "title": "Coffee Break"},
+        {"time": "11:15-11:40", "type": "talk", "speaker": "Shalabh Gautam", "title": "3D Summation-By-Parts Schemes on Hyperboloidal Slices"},
+        {"time": "11:40-12:05", "type": "talk", "speaker": "Kan Chen", "title": "Hot Gaps Carve Circumbinary Giant Planets Complicate Ice Line Locations and Trigger Dust Ring Formation in Disks"},
+        {"time": "12:05-12:30", "type": "talk", "speaker": "OKAMOTO Tamami", "title": "Noble gas enrichment in Jupiter's atmosphere due to disk photoevaporation"},
+        {"time": "12:30-14:00", "type": "lunch", "speaker": "", "title": "Lunch"},
+        {"time": "14:00-14:25", "type": "talk", "speaker": "Sunayana Maben", "title": "Probing stellar mergers through carbon-deficient red giantism enrichment is common across all HCNOs. I can them at lithium-rich giants and suggesting a shared evolutionary origin."},
+        {"time": "14:25-14:50", "type": "talk", "speaker": "Feihong He", "title": "Bimodal fates of subhalos and satellite galaxies in the cosmological simulation"},
+        {"time": "14:50-15:15", "type": "talk", "speaker": "Kang Jiangang", "title": "Research on Direct Measurement of Cosmic Expansion Acceleration Based on HI 21cm Signal Detection of Redshift Drift Effect"},
+        {"time": "15:15-15:25", "type": "poster", "speaker": "", "title": "Poster flash talks"},
+        {"time": "15:25-16:30", "type": "coffee", "speaker": "", "title": "Coffee Break"},
+        {"time": "16:30-16:55", "type": "talk", "speaker": "Tianyu Zhang", "title": "Modeling the Impacts of Galaxy Intrinsic Alignments on Weak Lensing Peak Statistics"},
+        {"time": "16:55-17:20", "type": "talk", "speaker": "Dong Yang", "title": "The environmental effects revealed by HI in Coma cluster"},
+        {"time": "17:20-18:00", "type": "discussion", "speaker": "", "title": "Various Scientific topics"}
+      ]
+    }
   },
   "registration": {
     "title": "Registration",
