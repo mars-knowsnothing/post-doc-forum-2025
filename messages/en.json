@@ -39,7 +39,7 @@
       "day1": [
         {"time": "9:00-9:15", "type": "opening", "speaker": "", "title": "Opening"},
         {"time": "9:15-9:40", "type": "talk", "speaker": "Mengfan He", "title": "Using Linear points to constraint the cosmological parameter"},
-        {"time": "9:40-10:05", "type": "talk", "speaker": "Fanyi Meng", "title": "HI superbubbles in HI3 show that supernovae power galactic turbulence"},
+        {"time": "9:40-10:05", "type": "talk", "speaker": "Fanyi Meng", "title": "HI superbubbles in M31 show that supernovae power galactic turbulence"},
         {"time": "10:05-10:15", "type": "poster", "speaker": "", "title": "Poster flash talks"},
         {"time": "10:15-11:15", "type": "coffee", "speaker": "", "title": "Coffee Break"},
         {"time": "11:15-11:40", "type": "talk", "speaker": "Yongjun Jiao", "title": "Galaxy HI Source Finding in FAST CRAFTS Data"},
