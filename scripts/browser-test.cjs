@@ -10,7 +10,7 @@ async function verify(page, url, width) {
   const link = page.getByRole('link', {name: 'Open registration form', exact: true});
   assert.equal(await link.getAttribute('href'), 'https://docs.qq.com/form/page/DUXF5YnRydUZmS0ZI');
   await page.locator('.registration-qr img').evaluate(image => image.decode());
-  assert.ok(await page.locator('.registration-qr img').evaluate(image => image.naturalWidth === 1000));
+  assert.ok(await page.locator('.registration-qr img').evaluate(image => image.naturalWidth === 1568 && image.naturalHeight === 1568));
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
 }
 

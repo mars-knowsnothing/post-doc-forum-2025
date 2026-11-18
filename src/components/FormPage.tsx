@@ -29,7 +29,7 @@ export default function FormPage() {
             </div>
           </div>
           <figure className="registration-qr">
-            <Image src="/images/tencent-registration.png" alt="QR code for the AstroConnect 2026 registration form on Tencent Docs" width={1000} height={1000} preload/>
+            <Image src="/images/tencent-registration.png" alt="QR code for the AstroConnect 2026 registration form on Tencent Docs" width={1568} height={1568} preload/>
             <figcaption>Scan to register</figcaption>
           </figure>
         </section>
